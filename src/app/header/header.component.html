@@ -1,0 +1,60 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand me-2" href="/">Brand</a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="basicNavbar.toggle()"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+      mdbCollapse
+      #basicNavbar="mdbCollapse"
+    >
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" (click)="goToHome()">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToAbout()">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToProducts()">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToContact()">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToDirective()">Directive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToOffers()">Offers</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+      <!-- Search form -->
+      <ul class="navbar-nav d-flex w-auto">
+        <li class="nav-item">
+          <a class="nav-link" (click)="goToAdmin()">Admin</a>
+        </li>
+    </ul>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->

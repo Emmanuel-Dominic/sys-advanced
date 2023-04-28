@@ -1,13 +1,5 @@
-<!-- <div
-  [ngClass]="{
-    red: isClicked && number % 5 != 0,
-    green: isClicked && number % 5 == 0
-  }"
-  (click)="onClick()"
->
-  {{ number }}
-</div> -->
-
-<div appHighlight [number]="number" [divisibleBy]="5">
-  {{ number }}
-</div>
+<app-header></app-header>
+<main class="min-vh-100">
+  <router-outlet></router-outlet>
+</main>
+<app-footer></app-footer>

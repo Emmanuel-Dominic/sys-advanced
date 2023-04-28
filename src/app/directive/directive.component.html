@@ -1,0 +1,15 @@
+<!-- <div class="directive"><div
+  [ngClass]="{
+    red: isClicked && number % 5 != 0,
+    green: isClicked && number % 5 == 0
+  }"
+  (click)="onClick()"
+>
+  {{ number }}
+</div></div> -->
+
+<div class="directive">
+    <div appHighlight [number]="number" [divisibleBy]="5">
+        {{ number }}
+    </div>
+</div>

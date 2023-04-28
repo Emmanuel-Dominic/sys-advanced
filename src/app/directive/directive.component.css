@@ -1,16 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
-* {
+.directive {
     font-size: 180px;
     font-weight: bold;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
 }

@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sys-advanced';
-  number = 60;
-  isClicked = false;
-
-  onClick() {
-    this.isClicked = true;
-  }
 }
