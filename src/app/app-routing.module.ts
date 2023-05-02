@@ -13,6 +13,8 @@ import { RoleGuard } from './services/role.guard';
 import { notCompleteGuard } from './services/not-complete.guard';
 import { ProductsComponent } from './products/products.component';
 import { ResolveGuard } from './services/resove.guard';
+import { PromisesComponent } from './promises/promises.component';
+import { ObservablesComponent } from './observables/observables.component';
 
 const routes: Routes = [
   {
@@ -43,6 +45,14 @@ const routes: Routes = [
   {
     path: 'directive',
     component: DirectiveComponent
+  },
+  {
+    path: 'promises',
+    component: PromisesComponent
+  },
+  {
+    path: 'observables',
+    component: ObservablesComponent
   },
   {
     path: 'admin',

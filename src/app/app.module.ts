@@ -32,6 +32,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AccessDeniedComponent } from './access-denied/access-denied.component';
 import { EditAboutComponent } from './edit-about/edit-about.component';
 import { ProductsComponent } from './products/products.component';
+import { PromisesComponent } from './promises/promises.component';
+import { ObservablesComponent } from './observables/observables.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { ProductsComponent } from './products/products.component';
     NotFoundComponent,
     AccessDeniedComponent,
     EditAboutComponent,
-    ProductsComponent
+    ProductsComponent,
+    PromisesComponent,
+    ObservablesComponent
   ],
   imports: [
     BrowserModule,
