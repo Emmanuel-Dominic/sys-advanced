@@ -34,6 +34,7 @@ import { EditAboutComponent } from './edit-about/edit-about.component';
 import { ProductsComponent } from './products/products.component';
 import { PromisesComponent } from './promises/promises.component';
 import { ObservablesComponent } from './observables/observables.component';
+import { ForkjoinComponent } from './forkjoin/forkjoin.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ObservablesComponent } from './observables/observables.component';
     EditAboutComponent,
     ProductsComponent,
     PromisesComponent,
-    ObservablesComponent
+    ObservablesComponent,
+    ForkjoinComponent
   ],
   imports: [
     BrowserModule,

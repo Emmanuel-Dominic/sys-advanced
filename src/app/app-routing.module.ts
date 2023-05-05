@@ -15,6 +15,7 @@ import { ProductsComponent } from './products/products.component';
 import { ResolveGuard } from './services/resove.guard';
 import { PromisesComponent } from './promises/promises.component';
 import { ObservablesComponent } from './observables/observables.component';
+import { ForkjoinComponent } from './forkjoin/forkjoin.component';
 
 const routes: Routes = [
   {
@@ -53,6 +54,10 @@ const routes: Routes = [
   {
     path: 'observables',
     component: ObservablesComponent
+  },
+  {
+    path: 'forkjoin',
+    component: ForkjoinComponent
   },
   {
     path: 'admin',

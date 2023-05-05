@@ -40,6 +40,28 @@
         <li class="nav-item">
           <a class="nav-link" (click)="goToDirective()">Directive</a>
         </li>
+        <li mdbDropdown class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            id="navbarDropdownMenuLink"
+            role="button"
+            mdbDropdownToggle
+            aria-expanded="false"
+          >
+            Load Data
+          </a>
+          <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" (click)="goToPromises()">Promises</a>
+            </li>
+            <li>
+              <a class="dropdown-item" (click)="goToObservables()">Observables</a>
+            </li>
+            <li>
+              <a class="dropdown-item" (click)="goToForkJoins()">ForkJoins</a>
+            </li>
+          </ul>
+        </li>
         <li class="nav-item">
           <a class="nav-link" (click)="goToOffers()">Offers</a>
         </li>

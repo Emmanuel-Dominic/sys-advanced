@@ -35,6 +35,18 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['contact']);
   }
 
+  goToPromises() {
+    this.router.navigate(['promises']);
+  }
+
+  goToObservables() {
+    this.router.navigate(['observables']);
+  }
+
+  goToForkJoins() {
+    this.router.navigate(['forkjoin']);
+  }
+
   goToOffers() {
     this.router.navigate(['offers']);
   }
