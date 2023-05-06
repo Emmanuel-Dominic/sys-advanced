@@ -47,6 +47,10 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['forkjoin']);
   }
 
+  goToIntercepts() {
+    this.router.navigate(['intercepts']);
+  }
+
   goToOffers() {
     this.router.navigate(['offers']);
   }

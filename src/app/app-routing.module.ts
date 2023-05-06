@@ -16,6 +16,7 @@ import { ResolveGuard } from './services/resove.guard';
 import { PromisesComponent } from './promises/promises.component';
 import { ObservablesComponent } from './observables/observables.component';
 import { ForkjoinComponent } from './forkjoin/forkjoin.component';
+import { SomeDataComponent } from './some-data/some-data.component';
 
 const routes: Routes = [
   {
@@ -58,6 +59,10 @@ const routes: Routes = [
   {
     path: 'forkjoin',
     component: ForkjoinComponent
+  },
+  {
+    path: 'intercepts',
+    component: SomeDataComponent
   },
   {
     path: 'admin',

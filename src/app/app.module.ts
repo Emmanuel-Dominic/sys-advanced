@@ -35,6 +35,10 @@ import { ProductsComponent } from './products/products.component';
 import { PromisesComponent } from './promises/promises.component';
 import { ObservablesComponent } from './observables/observables.component';
 import { ForkjoinComponent } from './forkjoin/forkjoin.component';
+import { SomeDataComponent } from './some-data/some-data.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { TokensInterceptor } from './services/tokens.interceptor';
 
 @NgModule({
   declarations: [
@@ -53,7 +57,8 @@ import { ForkjoinComponent } from './forkjoin/forkjoin.component';
     ProductsComponent,
     PromisesComponent,
     ObservablesComponent,
-    ForkjoinComponent
+    ForkjoinComponent,
+    SomeDataComponent
   ],
   imports: [
     BrowserModule,
@@ -74,9 +79,16 @@ import { ForkjoinComponent } from './forkjoin/forkjoin.component';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokensInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
