@@ -39,6 +39,7 @@ import { SomeDataComponent } from './some-data/some-data.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokensInterceptor } from './services/tokens.interceptor';
+import { TrackbyNgforComponent } from './trackby-ngfor/trackby-ngfor.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { TokensInterceptor } from './services/tokens.interceptor';
     PromisesComponent,
     ObservablesComponent,
     ForkjoinComponent,
-    SomeDataComponent
+    SomeDataComponent,
+    TrackbyNgforComponent
   ],
   imports: [
     BrowserModule,

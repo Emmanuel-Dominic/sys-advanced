@@ -17,6 +17,7 @@ import { PromisesComponent } from './promises/promises.component';
 import { ObservablesComponent } from './observables/observables.component';
 import { ForkjoinComponent } from './forkjoin/forkjoin.component';
 import { SomeDataComponent } from './some-data/some-data.component';
+import { TrackbyNgforComponent } from './trackby-ngfor/trackby-ngfor.component';
 
 const routes: Routes = [
   {
@@ -63,6 +64,10 @@ const routes: Routes = [
   {
     path: 'intercepts',
     component: SomeDataComponent
+  },
+  {
+    path: 'trackby-ngfor',
+    component: TrackbyNgforComponent
   },
   {
     path: 'admin',

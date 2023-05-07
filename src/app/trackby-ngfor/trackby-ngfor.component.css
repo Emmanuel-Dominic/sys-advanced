@@ -1,0 +1,21 @@
+.my-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.btn {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
