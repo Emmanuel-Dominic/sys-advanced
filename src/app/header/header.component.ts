@@ -55,6 +55,10 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['trackby-ngfor']);
   }
 
+  goToToastr() {
+    this.router.navigate(['components']);
+  }
+
   goToOffers() {
     this.router.navigate(['offers']);
   }

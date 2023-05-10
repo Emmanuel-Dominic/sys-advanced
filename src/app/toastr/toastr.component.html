@@ -1,0 +1,20 @@
+<div class="toast-container" *ngIf="showToast" [ngClass]="{
+    success: toastrType === 'success',
+    error: toastrType === 'error',
+    warn: toastrType === 'warn',
+    info: toastrType === 'info',
+    'top-left': toastrPosistion === 'top-left',
+    'top-right': toastrPosistion === 'top-right',
+    'bottom-left': toastrPosistion === 'bottom-left',
+    'bottom-right': toastrPosistion === 'bottom-right'
+}">
+    <div class="toast-content">
+        <span class="closeBtn" (click)="closeToast()">x</span>
+        <span class="icon" *ngIf="toastrType === 'success'">✔</span>
+        <span class="icon" *ngIf="toastrType === 'error'">x</span>
+        <span class="icon" *ngIf="toastrType === 'warn'">!</span>
+        <span class="icon" *ngIf="toastrType === 'info'">i</span>
+        <span>{{toastMsg}}</span>
+    </div>
+</div>
+<button class="btn btn-primary btn-lg" (click)="btnClicked()">Toastr</button>

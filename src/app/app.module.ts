@@ -40,6 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokensInterceptor } from './services/tokens.interceptor';
 import { TrackbyNgforComponent } from './trackby-ngfor/trackby-ngfor.component';
+import { ToastrComponent } from './toastr/toastr.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { TrackbyNgforComponent } from './trackby-ngfor/trackby-ngfor.component';
     ObservablesComponent,
     ForkjoinComponent,
     SomeDataComponent,
-    TrackbyNgforComponent
+    TrackbyNgforComponent,
+    ToastrComponent
   ],
   imports: [
     BrowserModule,

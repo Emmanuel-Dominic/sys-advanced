@@ -18,6 +18,7 @@ import { ObservablesComponent } from './observables/observables.component';
 import { ForkjoinComponent } from './forkjoin/forkjoin.component';
 import { SomeDataComponent } from './some-data/some-data.component';
 import { TrackbyNgforComponent } from './trackby-ngfor/trackby-ngfor.component';
+import { ToastrComponent } from './toastr/toastr.component';
 
 const routes: Routes = [
   {
@@ -68,6 +69,10 @@ const routes: Routes = [
   {
     path: 'trackby-ngfor',
     component: TrackbyNgforComponent
+  },
+  {
+    path: 'components',
+    component: ToastrComponent
   },
   {
     path: 'admin',
